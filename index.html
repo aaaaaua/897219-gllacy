@@ -1,12 +1,118 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
+   <head>
+     <meta charset="utf-8">
+     <title>HTML Academy: Седона</title>
+     <link href="css/normalize.css" rel="stylesheet">
+     <link href="css/style.css" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+   </head>
+   <body>
+     <div class="wrapper">
+       <!-- BEGIN HEADER -->
+       <header>
+         <div class="main-header-logo">
+           <img src="/img/Logo.svg" width="" height="" alt="Логотип магазина мороженого Глейси">
+         </div>
+         <ul class="main-menu">
+           <li class="navigation-button"><a href="#">Информация</a></li>
+           <li class="navigation-button"><a href="#">Доставка и оплата</a></li>
+           <li class="navigation-button"><a href="#">О компании</a></li>
+         </ul>
+         <ul class="right">
+           <li class="navigation-button"><a href="#">Поиск</a></li>
+           <li class="navigation-button"><a href="#">Вход</a></li>
+           <li class="navigation-button"><a href="#">Корзина</a></li>
+         </ul>
+       </header>
+       <!-- END HEADER -->
+       
+       <!-- BEGIN MAIN -->
+       <main>
+         <h1 class="visually-hidden">Глейси - лучший магазин мороженного!</h1>
+         <section class="main-picture-slider-block">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+         </section>
+         <div class="proposition-blocks">
+           <div class="proposition-block-left">
+             <h3>Малинка даром!</h3>
+             <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+             <button>Хочу Варенье!</button>
+           </div>
+           <div class="proposition-block-right">
+             <h3>Шоколадки даром!</h3>
+             <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+             <button>Хочу шоколадки!</type>
+           </div>
+         </div>
+         <div class="hits-block-container">
+           <div class="hits-item1">
+             <img src="/img/icon-hit.svg" class="hit-icon" width="" height="" alt="Хит!">
+             <img src="/img/hit-picture-item1.jpg" class="" width="" height="" alt="Фото товара">
+             <p class="hits-block-price">310₽/кг</p>
+             <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+           </div>
+           <div class="hits-item2">
+             <img src="/img/icon-hit.svg" class="hit-icon" width="" height="" alt="Хит!">
+             <img src="/img/hit-picture-item2.jpg" class="" width="" height="" alt="Фото товара">
+             <p class="hits-block-price">380₽/кг</p>
+             <p>Сливочно-кофейное с кусочками шоколада</p>
+           </div>
+           <div class="hits-item3">
+             <img src="/img/icon-hit.svg" class="hit-icon" width="" height="" alt="Хит!">
+             <img src="/img/hit-picture-item3.jpg" class="" width="" height="" alt="Фото товара">
+             <p class="hits-block-price">355₽/кг</p>
+             <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+           </div>
+           <div class="hits-item4">
+             <img src="/img/icon-hit.svg" class="hit-icon" width="" height="" alt="Хит!">
+             <img src="/img/hit-picture-item4.jpg" class="" width="" height="" alt="Фото товара">
+             <p class="hits-block-price">415₽/кг</p>
+             <p>Сливочное крем-брюле с карамельной подливкой</p>
+           </div>
+         </div>
+         <div class="about-block">
+           <h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
+           <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+           <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+           <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+           <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+         </div>
+         <div class="blog-news">
+           <h3>Новое в нашем блоге</h3>
+           <p><a hfer="#">10 способов сервировки фруктовых щербетов к столу</a></p>
+         </div>
+         <div class="subscription-block">
+           <h3 class="visually-hidden">Подпишитесь на рассылку</h3>
+           <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+           <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+             <input type="email" class="email" placeholder="Электронная почта">
+             <button class="subscription-submit-button" type="submit" value="Отправить">Отправить</button>
+           </form>
+         </div>
+         <section class="maps">
 
-  </body>
+         </section>
+       </main>
+       <!-- END MAIN -->
+
+       <!-- BEGIN FOOTER -->
+       <footer>
+         <div class="social-block">
+           <ul class="social-list">
+             <li aria-label="Страница магазина в Твиттере"><a class="social-button social-button-twitter" href="#"><span class="visually-hidden">Твиттер</span></a></li>
+             <li aria-label="Страница магазина в Инстаграме"><a class="social-button social-button-instagram" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+             <li aria-label="Страница магазина в Фейсбуке"><a class="social-button social-button-facebook" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+             <li aria-label="Страница магазина во Вконтакте"><a class="social-button social-button-vkontakte" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+           </ul>
+         </div>
+         <div class="footer-about">
+          <a class="for"></a>
+         </div>
+       </footer>
+
+
+   
+
+   </body>
 </html>
