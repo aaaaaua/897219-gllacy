@@ -92,6 +92,7 @@ a {
 .main-menu {
    display: flex;
    flex-grow: 1;
+   flex-wrap: wrap;
    padding-left: 10px;
    padding-top: 14px;
 }
@@ -171,24 +172,102 @@ a {
    justify-content: center;
    margin: 0px;
    padding: 0px;
+   font-size: 14px;
+   line-height: 16px;
 }
 
 .navigation-button-login {
-   display: flex;
-   width: 92px;
-   height: 32px;
+   min-height: 32px;
    align-items: center;
    justify-content: center;
    margin: 0px;
    padding: 0px;
+   padding-left: 16px;
+   padding-right: 16px;
 }
 
 .navigation-button-cart {
-   display: flex;
-   width: 100px;
-   height: 32px;
+   min-height: 32px;
    align-items: center;
    justify-content: center;
    margin: 0px;
    padding: 0px;
+   padding-left: 18px;
+   padding-right: 18px;
+}
+
+.navigation-button-login span {
+   padding-left: 6px;
+   font-size: 14px;
+   line-height: 16px;
+}
+
+.navigation-button-cart span {
+   padding-left: 6px;
+   font-size: 14px;
+   line-height: 16px;
+}
+/* ####################END-HEADER################### */
+
+/* ################BEGIN-MAIN################## */
+
+.proposition-blocks {
+   display: flex;
+   width: 100%;
+   margin: 0px;
+   padding: 0px;
+   padding-left: 27px;
+   padding-right: 27px;
+   color: #ffffff;
+}
+
+.proposition-blocks h3 {
+   font-size: 35px;
+   line-height: 41px;
+   margin: 0px;
+   padding: 0px;
+   margin-bottom: 15px;
+}
+
+.proposition-blocks p {
+   font-size: 18px;
+   line-height: 22px;
+   margin: 0px;
+   padding: 0px;
+   margin-bottom: 44px;
+}
+
+.proposition-block-left,
+.proposition-block-right {
+   display: flex;
+   flex-wrap: wrap;
+   min-width: 560px;
+   border-radius: 15px;
+   padding: 0px;
+   margin: 0px;
+   padding-left: 19px;
+   padding-right: 21px;
+   padding-top: 16px;
+   padding-bottom: 23px;
+}
+
+.proposition-block-left {
+   background-image: url(../img/background-proposition-1.jpg);
+   background-size: cover;
+   margin-right: 26px;
+}
+
+.proposition-block-right {
+   background-image: url(../img/background-proposition-2.jpg);
+   background-size: cover;
+}
+
+.button-proposition {
+   display: flex;
+   font-size: 18px;
+   line-height: 24px;
+   background-color: #ee6241;
+   padding-top: 10px;
+   padding-bottom: 12px;
+   margin-left: auto;
 }
