@@ -30,7 +30,7 @@ body {
    line-height: 22px; 
    font-weight: 400;
    color: rgb(0, 0, 0);
-   background-color: #849d8f;
+   background-color: #849d8f; 
    background-position: top center;
    background-repeat: no-repeat;
 }
@@ -44,6 +44,18 @@ body {
    padding: 0;
    clip: rect(0 0 0 0);
    overflow: hidden;
+}
+
+.totally-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+   visibility: hidden;
 }
 
 a {
@@ -229,9 +241,12 @@ a {
 /* ################BEGIN-MAIN################## */
 
 
+/* #######START-SLIDER-BLOCK####### */
+
 .main-picture-slider-block {
    position: relative;
-   padding-top: 321px;
+   padding-top: 293px;
+   padding-bottom: 25px;
    text-align: center;
    color: #ffffff;
    padding-left: 27px;
@@ -246,7 +261,7 @@ a {
 .slide-title {
    width: 700px;
    margin: 0 auto;
-   margin-bottom: 27px;
+   margin-bottom: 31px;
    font-size: 60px;
    line-height: 60px;
    font-weight: 800;
@@ -254,20 +269,19 @@ a {
 
 .slide-button {
    display: inline-flex;
-   padding: 12px 44px;
+   padding-top: 8px;
+   padding-bottom: 11px;
+   padding-left: 40px;
+   padding-right: 40px;
    font-weight: 600;
-   font-size: 31px;
-   line-height: 41px;
-   text-align: center;
+   font-size: 32px;
+   line-height: 44px;
    color: #ffffff;
-   vertical-align: top;
-   text-decoration: none;
    text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
    background: #f26843;
    background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
-   border-radius: 50px;
    box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
-   border: none;
+   border-radius: 50px;
    cursor: pointer;
 }
 
@@ -283,8 +297,8 @@ a {
 
 .slider-controls label {
    display: inline-flex;
-   width: 17px;
-   height: 17px;
+   width: 21px;
+   height: 21px;
    margin-right: 8px;
    background-color: transparent;
    border: 2px solid #ffffff;
@@ -294,7 +308,7 @@ a {
 
 .slider-controls {
    position: absolute;
-   bottom: 63px;
+   bottom: 60px;
    left: 0;
    
    font-size: 0;
@@ -319,7 +333,10 @@ a {
 
 
 #product-1:checked ~ .slider-wrapper {
-   background-color: #849d8f;
+   background-color: #849d8f; 
+   background-image:  url(../img/background-slider-12.png);
+   background-position: top center;
+   background-repeat: no-repeat;
 }
 
 #product-2:checked ~ .slider-wrapper {
@@ -332,8 +349,7 @@ a {
 
 
 
-/* ################################################################ */
-
+/* #######START-PROPOSITION-BLOCK####### */
 
 .proposition-blocks {
    display: flex;
@@ -488,7 +504,6 @@ span.hits-block-description span:active {
    line-height: 45px;
 }
 
- 
 .hits-items:after {
    position: absolute;
    content: '';
@@ -541,7 +556,6 @@ span.hits-block-description span:active {
    z-index: 3;
 }
 
-/* ###END-HIT-BLOCK### */
 
 /* ###START-ABOUT-BLOCK### */
 
@@ -639,8 +653,6 @@ span.hits-block-description span:active {
    margin-top: -13px;
 }
 
-
-/* ###END-ABOUT-BLOCK### */
 
 /* ###START-BLOG-SUBSCRIPTION### */
 
@@ -780,7 +792,6 @@ article.subscription-block {
    margin: 0px;
    padding-top: 9px;
 }
-/* ###END-BLOG-SUBSCRIPTION### */
 
 /* ###START-MAPS### */
 
@@ -830,8 +841,6 @@ article.subscription-block {
    box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
-
-/* ###END-MAPS### */
 
 /* ###START-FOOTER### */
 
