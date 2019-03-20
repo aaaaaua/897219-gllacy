@@ -7,21 +7,16 @@
      <link href="css/style.css" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Roboto:700,900,500&subset=latin,cyrillic" rel="stylesheet">
    </head>
-   <input class="totally-hidden" type="radio" id="product-1" name="toggle" checked>
-   <input class="totally-hidden" type="radio" id="product-2" name="toggle">
-   <input class="totally-hidden" type="radio" id="product-3" name="toggle">
    <body>
-
-     <div class="slider-wrapper">
      <div class="wrapper">
        <!-- BEGIN HEADER -->
        <header class="main-header">
          <div class="main-header-logo">
-           <img src="img/Logo.svg" width="154" height="64" alt="Логотип магазина мороженого Глейси">
+           <a href="index.html"><img src="img/Logo.svg" width="154" height="64" alt="Логотип магазина мороженого Глейси"></a>
          </div>
          <nav class="main-menu"> 
            <ul class="main-menu-item">
-             <li class="navigation-button-catalog"><a href="catalog.html"><span>Каталог</span></a></li>
+             <li class="navigation-button-catalog current-page"><span>Каталог</span></li>
              <li class="navigation-button-pay"><a href="#"><span>Доставка и оплата</span></a></li>
              <li class="navigation-button-about"><a href="#"><span>О Компании</span></a></li>
            </ul>
@@ -39,131 +34,98 @@
                  <span>Вход</span>
                </a>
              </li>
-             <li class="main-menu-cart">
-               <a href="#" class="button navigation-button-cart">
-                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve"><g><path fill="#FFFFFF" d="M5.657,2.031L5.422,0H0v2h3.64l1.5,13h13.988l1.699-12.969H5.657z M17.372,13H6.922L5.888,4.031h12.66L17.372,13z"/><circle fill="#FFFFFF" cx="6.984" cy="18" r="2"/><circle fill="#FFFFFF" cx="15.984" cy="18" r="2"/></g></svg>
-                 <span>Пусто</span>
+             <li class="main-menu-cart cart-catalog">
+               <a href="#" class="button navigation-button-cart button-cart-with-item">
+                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve"><polygon fill="#E84D37" points="5.888,4.031 6.922,13 17.372,13 18.548,4.031 "/><circle fill="#343434" cx="6.984" cy="18" r="2"/><circle fill="#343434" cx="15.984" cy="18" r="2"/><path fill="#343434" d="M5.657,2.031L5.422,0H0v2h3.64l1.5,13h13.988l1.699-12.969H5.657z M17.372,13H6.922L5.888,4.031h12.66L17.372,13z"/></svg>
+                 <span>2 товара</span>
                </a>
              </li>
            </ul>
          </nav>
        </header>
        <!-- END HEADER -->
-       
+  
        <!-- BEGIN MAIN -->
-       <main>
-         <h1 class="visually-hidden">Глейси - лучший магазин мороженного!</h1>
-         <section class="main-picture-slider-block">
-           <div class="slider-controls">
-             <label for="product-1">Первый</label>
-             <label for="product-2">Второй</label>
-             <label for="product-3">Третий</label>
-           </div>
-           <div class="contacts">
-             <p>С 10 до 20, ежедневно</p>
-             <a href="tel:8 812 450-25-25">8 812 450-25-25</a>
-           </div>
-           <ul class="slider-list">
-             <li class="slider-item slide" id="slide1">
-               <!-- <img src="img/background-slider-12.png" alt="Фото морженного" class="product-image-1"> -->
-               <h3 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h3>
-               <a class="button slide-button" href="#">Давайте оба!</a>
-             </li>
-             <li class="slider-item slide" id="slide2">
-               <!-- <img src="img/background-slider-22.png" alt="Фото морженного" class="product-image-2"> -->
-               <h3 class="slide-title">Шоколадный пломбир и лимонный сорбет</h3>
-               <a class="button slide-button" href="#">Давайте оба!</a>
-             </li>
-             <li class="slider-item slide" id="slide3">
-               <!-- <img src="img/background-slider-33.png" alt="Фото морженного" class="product-image-3"> -->
-               <h3 class="slide-title">Пломбир с помадкой и клубничный щербет</h3>
-               <a class="button slide-button" href="#">Давайте оба!</a>
-             </li>
-           </ul>
-         </section>
-         
-         <div class="proposition-blocks">
-           <div class="proposition-block-left">
-             <h3>Малинка даром!</h3>
-             <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-             <a href="#" class="button button-proposition">Хочу варенье!</a>
-           </div>
-           <div class="proposition-block-right">
-             <h3>Шоколадки даром!</h3>
-             <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-             <a href="#" class="button button-proposition">Хочу шоколадки!</a>
-           </div>
-         </div>
-         
+       <section class="catalog-filter-block">
 
-         <div class="hits-block-container">
-           <div class="catalog-item hits-items">
-             <img src="img/hit-picture-item1.png" width="267" height="267" alt="Фото товара">
-             <p class="item-price">310₽<span>/кг</span></p>
-             <a href="#" class="catalog-item-description"><span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span></a>
-             <button class="button button-hits-quick-view" type="button">Быстрый просмотр</button>
-           </div>
-           <div class="catalog-item hits-items">
-             <img src="img/hit-picture-item2.png" class="" width="267" height="267" alt="Фото товара">
-             <p class="item-price">380₽<span>/кг</span></p>
-             <a href="#" class="catalog-item-description"><span>Сливочно-кофейное с кусочками шоколада</span></a>
-             <button class="button button-hits-quick-view" type="button">Быстрый просмотр</button>
-           </div>
-           <div class="catalog-item hits-items">
-             <img src="img/hit-picture-item3.png" class="" width="267" height="267" alt="Фото товара">
-             <p class="item-price">355₽<span>/кг</span></p>
-             <a href="#" class="catalog-item-description"><span>Сливочно-клубничное с присыпкой из белого шоколада</span></a>
-             <button class="button button-hits-quick-view" type="button">Быстрый просмотр</button>
-           </div>
-           <div class="catalog-item hits-items">
-             <img src="img/hit-picture-item4.png" class="" width="267" height="267" alt="Фото товара">
-             <p class="item-price">415₽<span>/кг</span></p>
-             <a href="#" class="catalog-item-description"><span>Сливочное крем-брюле с карамельной подливкой</span></a>
-             <button class="button button-hits-quick-view" type="button">Быстрый просмотр</button>
-           </div>
+       </section>
+
+       <div class="catalog-items-container">
+         <div class="catalog-item">
+           <img src="img/hit-picture-item1.png" width="267" height="267" alt="Фото товара">
+           <p class="item-price">310₽<span>/кг</span></p>
+           <a href="#" class="catalog-item-description"><span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span></a>
+           <button class="button button-hits-quick-view" type="button">Быстрый просмотр</button>
+         </div>
+         <div class="catalog-item">
+           <img src="img/hit-picture-item2.png" class="" width="267" height="267" alt="Фото товара">
+           <p class="item-price">380₽<span>/кг</span></p>
+           <a href="#" class="catalog-item-description"><span>Сливочно-кофейное с кусочками шоколада</span></a>
+           <button class="button button-hits-quick-view" type="button">Быстрый просмотр</button>
+         </div>
+         <div class="catalog-item">
+           <img src="img/hit-picture-item3.png" class="" width="267" height="267" alt="Фото товара">
+           <p class="item-price">355₽<span>/кг</span></p>
+           <a href="#" class="catalog-item-description"><span>Сливочно-клубничное с присыпкой из белого шоколада</span></a>
+           <button class="button button-hits-quick-view" type="button">Быстрый просмотр</button>
+         </div>
+         <div class="catalog-item">
+           <img src="img/hit-picture-item4.png" class="" width="267" height="267" alt="Фото товара">
+           <p class="item-price">415₽<span>/кг</span></p>
+           <a href="#" class="catalog-item-description"><span>Сливочное крем-брюле с карамельной подливкой</span></a>
+           <button class="button button-hits-quick-view" type="button">Быстрый просмотр</button>
          </div>
 
-
-         <div class="about-block">
-           <h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
-           <div class="about-block-1-2">
-             <p class="about-item-1">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-             <p class="about-item-2">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-           </div>
-           <div class="about-block-3-4">
-             <p class="about-item-3">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-             <p class="about-item-4">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
-           </div> 
+         <div class="catalog-item">
+           <img src="img/catalog-item-picture5.png" width="267" height="267" alt="Фото товара">
+           <p class="item-price">325₽<span>/кг</span></p>
+           <a href="#" class="catalog-item-description"><span>Сливочное с брусничным джемом</span></a>
+           <button class="button button-hits-quick-view" type="button">Быстрый просмотр</button>
          </div>
-         
-
-         <div class="blog-subscription-container">
-           <article class="blog-news-block">
-             <h3>Новое в нашем блоге</h3>
-             <a class="blog-news-title" href="#">10 способов сервировки фруктовых щербетов к столу</a>
-           </article>
-           <article class="subscription-block">
-             <h3 class="visually-hidden">Подпишитесь на рассылку</h3>
-             <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-             <form class="subscription-form" action="https://echo.htmlacademy.ru" method="post">
-               <input type="email" class="subscription-email" name="subscription-email" placeholder="Электронная почта" required>
-               <button class="button subscription-submit-button" type="submit" value="Отправить">Отправить</button>
-             </form>
-           </article>
+         <div class="catalog-item">
+           <img src="img/catalog-item-picture6.png" class="" width="267" height="267" alt="Фото товара">
+           <p class="item-price">410₽<span>/кг</span></p>
+           <a href="#" class="catalog-item-description"><span>Сливочно-черничное с цельными ягодами черники</span></a>
+           <button class="button button-hits-quick-view" type="button">Быстрый просмотр</button>
          </div>
-         
+         <div class="catalog-item">
+           <img src="img/catalog-item-picture7.png" class="" width="267" height="267" alt="Фото товара">
+           <p class="item-price">375₽<span>/кг</span></p>
+           <a href="#" class="catalog-item-description"><span>Сливочно-лимонное с карамельной присыпкой</span></a>
+           <button class="button button-hits-quick-view" type="button">Быстрый просмотр</button>
+         </div>
+         <div class="catalog-item">
+           <img src="img/catalog-item-picture8.png" class="" width="267" height="267" alt="Фото товара">
+           <p class="item-price">320₽<span>/кг</span></p>
+           <a href="#" class="catalog-item-description"><span>Сливочное с шоколадной стружкой</span></a>
+           <button class="button button-hits-quick-view" type="button">Быстрый просмотр</button>
+         </div>
 
-         <section class="maps">
-           <h2 class="visually-hidden">Контакты</h2>
-           <iframe src="https://yandex.ru/map-widget/v1/-/CCeEzHm6" width="1200" height="429" frameborder="0" allowfullscreen="true"></iframe>
-           <div class="maps-contacts">
-             <p class="">Адрес главного офиса и офлайн магазина:</p>
-             <p>ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
-             <p>Для заказов по телефону: 8 812 450-25-25 (с 10 до 20 ежедневно)</p>
-             <a href="#" class="button button-feedback-form">Форма обратной связи</a>
-           </div>
-         </section>
-       </main>
+         <div class="catalog-item">
+           <img src="img/catalog-item-picture9.png" width="267" height="267" alt="Фото товара">
+           <p class="item-price">440₽<span>/кг</span></p>
+          <a href="#" class="catalog-item-description"><span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span></a>
+           <button class="button button-hits-quick-view" type="button">Быстрый просмотр</button>
+         </div>
+         <div class="catalog-item">
+           <img src="img/catalog-item-picture10.png" class="" width="267" height="267" alt="Фото товара">
+           <p class="item-price">435₽<span>/кг</span></p>
+           <a href="#" class="catalog-item-description"><span>Сливочно-кофейное с кусочками шоколада</span></a>
+           <button class="button button-hits-quick-view" type="button">Быстрый просмотр</button>
+         </div>
+         <div class="catalog-item">
+           <img src="img/catalog-item-picture11.png" class="" width="267" height="267" alt="Фото товара">
+           <p class="item-price">355₽<span>/кг</span></p>
+           <a href="#" class="catalog-item-description"><span>Сливочно-клубничное с присыпкой из белого шоколада</span></a>
+          <button class="button button-hits-quick-view" type="button">Быстрый просмотр</button>
+         </div>
+         <div class="catalog-item">
+           <img src="img/catalog-item-picture12.png" class="" width="267" height="267" alt="Фото товара">
+           <p class="item-price">420₽<span>/кг</span></p>
+           <a href="#" class="catalog-item-description"><span>Сливочное крем-брюле с карамельной подливкой</span></a>
+           <button class="button button-hits-quick-view" type="button">Быстрый просмотр</button>
+         </div>
+       </div>  
        <!-- END MAIN -->
 
        <!-- BEGIN FOOTER -->
